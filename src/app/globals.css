@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/font/fonnts.com-Maison_Neue_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/font/fonnts.com-Maison_Neue_Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Maison Neue";
+  src: url("/font/fonnts.com-Maison_Neue_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Maison Neue Mono";
+  src: url("/font/fonnts.com-Maison_Neue_Mono.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-mamyuk-primary: #00aa13;
+  --color-mamyuk-light: #319615;
+  --color-mamyuk-danger: #ff0000;
+  --color-mamyuk-warning: #ffa500;
+  --color-mamyuk-info: #17a2b8;
+  
+  --font-family-sans: "Maison Neue", sans-serif;
+  --font-family-mono: "Maison Neue Mono", monospace;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-family-sans);
 }
