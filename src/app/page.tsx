@@ -29,7 +29,7 @@ export default function Home() {
               Bantuan
             </Link>
             <div className="flex gap-2 md:gap-3">
-              <Link href="/login">
+              <Link href="/auth/login">
                 <Button
                   variant="outline"
                   size="sm"
@@ -38,7 +38,7 @@ export default function Home() {
                   Masuk
                 </Button>
               </Link>
-              <Link href="/register">
+              <Link href="/auth/register">
                 <Button
                   variant="primary"
                   size="sm"
@@ -266,7 +266,7 @@ export default function Home() {
             Bergabung dengan ribuan siswa lainnya yang sudah menikmati kemudahan
             jajan di kantin
           </p>
-          <Link href="/register">
+          <Link href="/auth/register">
             <Button
               variant="secondary"
               size="md"
