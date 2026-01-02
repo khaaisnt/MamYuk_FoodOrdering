@@ -11,6 +11,10 @@ axiosInstance.interceptors.request.use(
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
+    
+    const makerID = process.env.NEXT_PUBLIC_MAKER_ID || "1";
+    config.headers["makerID"] = makerID;
+    
     return config;
   },
   (error) => Promise.reject(error)
